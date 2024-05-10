@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Alaram.css">
+    <script src="./Alaram.js" defer></script> 
+</head>
+<body onload="dateoutput()">
+    <i id="fa-solid" id="fa-bell" id="fa-bounce"id="icon" onclick="openAlaramwndow()"></i>
+    <div id="toggle">
+        <input type="button" id="button" onclick="toggleButton()">
+    </div>
+    <div id="containerClock">
+        <div id="hrContainer">
+            <h1 id="hours12"></h1>
+            <h1 id="hours24"></h1>
+        </div>
+        <h1 id="date"></h1>
+        <h1 id="day"></h1>
+    
+    <h1 id="sec"></h1>
+    <div id="containerAlarm"></div>
+    <span id="close" onclick="closeAlarmwindow()">+</span>
+    <input class="inp" type="date"oninput="userData()">
+    <input  class="inp" type="time" oninput="userData()">
+    </div>
+</body>
+</html>
